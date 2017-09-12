@@ -1,0 +1,78 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+	color: #555;
+	font-family: Arial, sans-serif;
+	font-size: 1.4em;
+	line-height: 1.5;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	min-width: 320px;
+}
+
+a {
+	color: #ED652E;
+	text-decoration: none;	
+}
+
+label {
+	display: block;
+	text-transform: uppercase;
+	font-size: 0.5em;
+	letter-spacing: 0.2em;
+	margin-bottom: 0.3em;
+}
+
+input {
+	border: solid 1px #bbb;
+	font-size: 1em;
+	width: 100%; 
+	padding: 0.5em;
+	margin-bottom: 1.5em;
+}
+
+fieldset {
+	border: solid 2px #555;
+	border-radius: 0.5em;
+	margin: 3em 4em;
+	padding: 1.6em 2em;
+}
+
+legend {
+	font-size: 1.5em;
+}
+
+.field {
+	position: relative;
+}
+
+button {
+	border: none;
+	border-radius: 0.2em;
+	background: none #98C741;
+	color: #fff;
+	font-size: 1.1em;
+	padding: 0.4em 0.8em;
+}
+
+[role="tooltip"] {
+    display: none;
+	font-size: 0.6em;
+	font-style: italic;
+    padding: 0.3em 0.8em;
+    margin: -2.4em 0;
+    background: #ddd;
+    width: 100%;
+	text-align: center;
+}
+
+input:focus + [role="tooltip"] {
+	display: block;
+	position: absolute;
+	top: 100%;
+}

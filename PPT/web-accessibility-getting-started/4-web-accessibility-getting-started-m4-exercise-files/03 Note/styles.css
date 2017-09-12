@@ -1,0 +1,30 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+	color: #555;
+	font-family: Arial, sans-serif;
+	font-size: 1.4em;
+	line-height: 1.5;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	min-width: 320px;
+}
+
+body {
+	padding: 10% 3em 0;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+[role="note"] {
+	color: #999;
+	font-size: 80%;
+	font-style: italic;
+}

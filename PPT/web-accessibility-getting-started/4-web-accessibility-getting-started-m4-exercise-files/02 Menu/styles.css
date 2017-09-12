@@ -1,0 +1,73 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+	color: #555;
+	font-family: Arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.5;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	min-width: 320px;
+}
+
+body {
+	padding: 20% 3em 0;
+}
+
+h2 {
+	display: none;
+}
+
+.menu {
+	background: #404041;
+	margin: 0;
+	padding: 0.9375em 1.3em 0;
+}
+
+.menu > li {
+	display: inline-block;
+	margin: 0 0.9375em 0 0;
+	padding-bottom: 5px;
+	position: relative;
+}
+
+.menu > li.current {
+	border-bottom: 3px solid #ED652E;
+}
+
+.menu a {
+	color: #aaa;
+	text-decoration: none;
+}
+
+.menu a:hover {
+	color: #fff;
+}
+
+[aria-hidden="true"] {
+    display: none;
+}
+
+.menu > li ul {
+	background: #404041;
+	list-style: none;
+	left: -0.9375em;
+	margin: 0;
+	padding: 0.5em 0.9375em;
+	position: absolute;
+	white-space: nowrap;
+}
+
+.menu > li:hover ul {
+	display: block;
+}
+
+.menu > li ul li {
+	padding-bottom: 0.3em;
+	padding-top: 0.3em;
+}

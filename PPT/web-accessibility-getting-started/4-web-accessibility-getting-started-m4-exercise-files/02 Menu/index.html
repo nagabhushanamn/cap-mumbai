@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Web Accessibility: Getting Started - ARIA Menu Example</title>
+		<link href="styles.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav role="navigation">
+			<h2>Main Navigation</h2>
+			<ul role="menu" class="menu">
+				<li role="menuitem" class="current"><a href="#">Home</a></li>
+				<li role="menuitem">
+					<a href="#" aria-haspopup="true">Our Products</a>
+					<ul role="menu" aria-hidden="true" class="submenu">
+						<li role="menuitem"><a href="#">Product One</a></li>
+						<li role="menuitem"><a href="#">Product Two</a></li>
+						<li role="menuitem"><a href="#">Product Three</a></li>
+					</ul>
+				</li>
+				<li role="menuitem">
+					<a href="#" aria-haspopup="true">Our Services</a>
+					<ul role="menu" aria-hidden="true" class="submenu">
+						<li role="menuitem"><a href="#">Service Plan One</a></li>
+						<li role="menuitem"><a href="#">Service Plan Two</a></li>
+						<li role="menuitem"><a href="#">Service Plan Three</a></li>
+					</ul>
+				</li>
+				<li role="menuitem"><a href="#">News</a></li>
+				<li role="menuitem"><a href="#">About</a></li>
+				<li role="menuitem"><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script>
+			
+			var showSubmenu = function(dropdown) {
+				dropdown.attr('aria-hidden', 'false');
+			};
+			
+			var hideSubmenu = function(dropdown) {
+				dropdown.attr('aria-hidden', 'true');
+			};
+			
+			$('[aria-haspopup]').hover(function() {
+				showSubmenu($(this).next());
+				$(this).off('click');
+			});
+			
+			$('[aria-haspopup]').parents('li').mouseleave(function() {
+				hideSubmenu($(this).find('.submenu'));
+			});
+			
+		</script>
+	</body>
+</html>
