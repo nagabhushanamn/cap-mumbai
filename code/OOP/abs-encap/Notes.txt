@@ -1,0 +1,18 @@
+
+
+
+ in .java, how to implement abstraction & encapsulation concepts
+ 
+ many ways
+ 
+ 1. using access-specifiers & packages
+ 2. using accessor-methods ( set & get )
+ 3. using class & interfaces
+ 
+     class ==> obj's implementation/encapsulation
+     interface ==> obj's abstraction
+ 
+ --------------------------------------------
+ 
+ 
+ 

@@ -1,0 +1,69 @@
+
+
+what is object ?
+
+  - data,props,attr,info   ==> State
+  - func,work,oprn,method  ==> Behavior
+  - loc,addr,ref           ==> Identity
+
+  obj ==> SBI
+
+  --------------------------------
+
+ what is class ?
+
+ --> blue-print of object
+ --> description ( S & B ) of similar objects    
+
+ -------------------------------
+
+ class   ==> object(s)
+
+ -------------------------------------
+
+
+
+  OO Concepts
+  --------------
+
+
+  1. Abstraction => Interface | Front-End
+ 
+     why we need ?
+
+     --> easy to use/learn
+     --> for loose-coupling b/w dependent & dependency objs
+
+ 2. Encapsulation => Implementation | Back-End
+
+     why we need ?
+
+     --> to hide complex impln details 
+     --> for secure some data/func from direct access
+
+ 3. Inheritance
+
+    inherit common props/behav from more generalized-class 
+    to specialized class's objs      
+     
+    why we need ?
+
+     --> re-use 
+     --> easy to extend current system with new features 
+    
+
+4. polymosphism ==> many forms
+
+
+   -> a object doing same-behav in different approaches 
+    based on input/envi
+
+   why we need ?
+
+    -> obj can be re-use on different input params
+    
+ --------------------------------------------------------
+
+
+  
+
